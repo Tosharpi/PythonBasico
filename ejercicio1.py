@@ -1,4 +1,5 @@
-num1 = input('ingrese el numero 1: ')
-num2 = input('ingrese el numero 1: ')
-suma = int(num1) + int(num2)
-print(suma)
+num1 = int(input('ingrese el primer numero: '))
+num2 = int(input('ingrese el segundo numero: '))
+
+numMayor1 = num1>num2
+print(numMayor1)
