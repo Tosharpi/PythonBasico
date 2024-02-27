@@ -3,7 +3,7 @@
 #por ejemplo, postres : genobesa, roscones, gelatina, nose
 #cuantos desea? y promociones
 #diga los productos seleccionados y haga el pago
-
+#[]
 # Tupla de panes dulces
 
 MenuDulce = (
@@ -63,18 +63,27 @@ print(
 
 catMenú = int(input('¿Que menú desea ver? '))
 
+#el menu de productos dulces
 if catMenú == 0:
-    for numProductDulce, nomProductoDulce in enumerate(MenuDulce):
-        print(f""" {numProductDulce}. {MenuDulce[numProductDulce]} ${MenuDulcePrecio[numProductDulce]}""")
+    for numProductDulce, nomProductDulce in enumerate(MenuDulce):
+        print(f""" {numProductDulce}. {nomProductDulce} ${MenuDulcePrecio[numProductDulce]}""")
 
-        decision = input('¿Que producto desea llevar?')
-        print(f"""Seleccionó el producto  {numProductDulce[decision]} 
-        cuyo valor es ${MenuDulcePrecio[decision]}""")
+    decision = int(input('¿Que producto desea llevar? digite su codigo: '))
 
-elif catMenú == 2 :
+    print(f"""Seleccionó el producto  {MenuDulce[decision]} 
+    cuyo valor es ${MenuDulcePrecio[decision]}""")
+
+#el menu de productos salados
+if catMenú == 2 :
     for numProductSalado, nomProductoSalado in enumerate(MenuSalado):
-        print(f""" {numProductSalado}. {MenuDulce[numProductSalado]} ${MenuSaladoPrecio[numProductSalado]}""")
+        print(f""" {numProductSalado}. {nomProductoSalado} ${MenuSaladoPrecio[numProductSalado]}""")
 
-elif catMenú == 1 :
+    decision = int(input('¿Que producto desea llevar? digite su codigo: '))
+    
+    print(f""" seleccionó el producto  {MenuSalado[decision]} 
+    cuyo valor es ${MenuSaladoPrecio[decision]} """)
+
+#el menu de productos tipo postres
+if catMenú == 1 :
     for numProductPostre, nomProductoPostre in enumerate(MenuPostre):
         print(f""" {numProductPostre}. {MenuPostre[numProductPostre]} ${MenuPostrePrecio[numProductPostre]}""")
