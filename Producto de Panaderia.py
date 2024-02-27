@@ -3,7 +3,7 @@
 #por ejemplo, postres : genobesa, roscones, gelatina, nose
 #cuantos desea? y promociones
 #diga los productos seleccionados y haga el pago
-#[]
+#[]-
 # Tupla de panes dulces
 
 MenuDulce = (

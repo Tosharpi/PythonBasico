@@ -5,3 +5,4 @@ productos.insert(1, 'Ponymalta')
 productos = tuple((productos))
 print(productos)
 print(productos.count('Colombiana'), 'colombiana/s')
+#

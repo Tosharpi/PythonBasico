@@ -37,3 +37,4 @@ if dinero >= precios[opcion]:
            sus vueltos son ${vueltos}""")
 else:
     print(f"""usuario el producto que desea comprar {productos[opcion]} con un valor de ${precios[opcion]}, le falta un total de ${-vueltos}""")
+    #

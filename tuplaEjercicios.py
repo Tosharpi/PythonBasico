@@ -14,7 +14,7 @@ calle = input('ingrese su calle: ')
 ciudad = input('ingrese su ciudad: ')
 pais = input('ingrese su pais: ')
 tuplaDireccion = (pais, ciudad, barrio, calle)
-
+#
 
 
 #datos de educacion
