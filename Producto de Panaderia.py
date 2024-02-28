@@ -61,7 +61,6 @@ MenuDescuentos = (
     "Pretzel Tiramisú: 2 o más unidades por un descuento del 20","%","en el precio final",
     "Eclair Tiramisú: 2 o más unidades por un descuento del 25","%","en el precio final",
 )
-
 MenuDescuentosPorcentaje = (
     0.05,
     0.10,
@@ -109,7 +108,7 @@ if catMenú == 0:
     cuyo valor es ${MenuDulcePrecio[decision]}""")
 
     cantidad = int(input('¿cuantas unidades desea llevar?'))
-    deuda = cantidad * MenuDulcePecio[decirsion]
+    deuda = cantidad * MenuDulcePrecio[decision]
     print('La cantidad a pagar es: ', deuda)
 
     pago = int(input('introduzca la cantidad de dinero correspondiente a la deuda: '))
